@@ -16,76 +16,71 @@ export function Nav() {
   return (
     <>
       {/* <Logo/> */}
-      <div className="container">
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
-          <div className="container-fluid justify-content-between" id="navbar">
-            <a href="" className="navbar-brand">
-              6t<span>oo</span>s
-            </a>
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarContent"
-              aria-controls="navbarContent"
-              aria-expanded="false"
-              aria-label="toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarContent">
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0" id="nav-content">
-                <li className="nav-item">
-                  <a
-                    onClick={activate}
-                    className="nav-link active"
-                    href="#home"
-                  >
-                    Home
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a onClick={activate} className="nav-link" href="#about">
-                    About
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a onClick={activate} className="nav-link" href="#service">
-                    Services
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a onClick={activate} className="nav-link" href="#portfolio">
-                    Portfolio
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a onClick={activate} className="nav-link" href="#contact">
-                    Contact
-                  </a>
-                </li>
-                <li className="nav-item" id="download">
-                  <a
-                    href="img/Sixtus_Offoegbu.pdf"
-                    download=""
-                    className="nav-link"
-                  >
-                    Download CV
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="hamburger">
-              <span className="menu" id="menu">
-                <i className="fas fa-bars menu-btn"></i>
-              </span>
-              <span className="close" id="close">
-                <i className="fas fa-times close-btn"></i>
-              </span>
-            </div>
+
+      <nav
+        className="navbar navbar-expand-lg bg-body-tertiary"
+        data-bs-theme="dark"
+      >
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
+            Navbar
+          </a>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <a
+                  onClick={activate}
+                  className="nav-link active"
+                  aria-current="page"
+                  href="#home"
+                >
+                  Home
+                </a>
+              </li>
+              <li className="nav-item">
+                <a onClick={activate} className="nav-link" href="#about">
+                  About
+                </a>
+              </li>
+              <li className="nav-item">
+                <a onClick={activate} className="nav-link" href="#service">
+                  Services
+                </a>
+              </li>
+              <li className="nav-item">
+                <a onClick={activate} className="nav-link" href="#portfolio">
+                  Portfolio
+                </a>
+              </li>
+              <li className="nav-item">
+                <a onClick={activate} className="nav-link" href="#contact">
+                  Contact
+                </a>
+              </li>
+              <li className="nav-item" id="download">
+                <a
+                  href="img/Sixtus_Offoegbu.pdf"
+                  download=""
+                  className="nav-link"
+                >
+                  Download CV
+                </a>
+              </li>
+            </ul>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </>
   );
 }
