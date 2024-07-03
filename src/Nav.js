@@ -18,12 +18,12 @@ export function Nav() {
       {/* <Logo/> */}
 
       <nav
-        className="navbar navbar-expand-lg bg-body-tertiary container"
+        className="navbar navbar-expand-lg bg-body-tertiary"
         data-bs-theme="dark"
       >
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            <span className="text-dark badge bg-light">6toos</span>
+          <a className="navbar-brand fs-4" href="#">
+            <span style={{ color: "aqua" }}>6</span>toos
           </a>
           <button
             className="navbar-toggler"
