@@ -18,12 +18,12 @@ export function Nav() {
       {/* <Logo/> */}
 
       <nav
-        className="navbar navbar-expand-lg bg-body-tertiary"
+        className="navbar navbar-expand-lg bg-body-tertiary container"
         data-bs-theme="dark"
       >
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            Navbar
+            <span className="text-dark badge bg-light">6toos</span>
           </a>
           <button
             className="navbar-toggler"
@@ -36,7 +36,10 @@ export function Nav() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNavDropdown">
+          <div
+            className="collapse navbar-collapse justify-content-end"
+            id="navbarNavDropdown"
+          >
             <ul className="navbar-nav">
               <li className="nav-item">
                 <a
