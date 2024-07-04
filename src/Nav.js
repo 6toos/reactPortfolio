@@ -1,5 +1,5 @@
 import React from "react";
-// import bgImage from "./bgImage.png"
+import bgImage from "./bgImage.png";
 
 export function Nav() {
   function activate() {
@@ -9,21 +9,16 @@ export function Nav() {
     }
     event.currentTarget.classList.add("active");
   }
-  function Logo(props) {
-    // const display = <img src={bgImage} />;
-    return display;
-  }
   return (
     <>
-      {/* <Logo/> */}
-
       <nav
         className="navbar navbar-expand-lg bg-body-tertiary"
         data-bs-theme="dark"
       >
         <div className="container-fluid">
           <a className="navbar-brand fs-4" href="#">
-            <span style={{ color: "aqua" }}>6</span>toos
+            {/* <span style={{ color: "aqua" }}>6</span>toos */}
+            <img src={bgImage} />
           </a>
           <button
             className="navbar-toggler"
